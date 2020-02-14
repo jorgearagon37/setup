@@ -1,0 +1,5 @@
+#!/bin/zsh
+arg=$1
+echo "Cases that will be moved";
+find ~/Documents/Open_Cases/*.txt -mtime +$arg;
+find ~/Documents/Open_Cases/*.txt -mtime +$arg -exec mv {} ~/Documents/Closed_Cases \;

@@ -1,0 +1,6 @@
+#!/bin/zsh
+arg=$1;
+echo "Found in Open Cases:"
+mdfind $arg -onlyin /Users/jorge/Documents/Open_Cases;
+echo "Found in Closed Cases:"
+mdfind $arg -onlyin /Users/jorge/Documents/Closed_Cases;
